@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Italianno|Lato:300,400,700,900|Raleway:400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/stylesUsuario.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>inicio_administrador</title>
+</head>
+<body>
+    <!--HEADER-->
+    <header class="header">
+        <div class="barra bg-success">
+            <div class="container">
+                <div class="navbar bg-transparent navbar-dark navbar-expand-lg">
+                    <a href="#" class="navbar-brand text-uppercase">consultora<span>SUMO</span></a>
+                    <button class="navbar-toggler" data-toggle="collapse" data-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Mostrar Navegación">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="menuPrincipal">
+                        <ul class="navbar-nav w-100 justify-content-end">
+                            <li class="nav-item">
+                                <a href="inicio_administrador.html" class="nav-link">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="nosotros_administrador" class="nav-link">Nosotros</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" id="estudiantesDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Estudiantes</a>
+                                <div class="dropdown-menu" aria-labelledby="estudiantesDropdown">
+                                    <a href="#" class="dropdown-item">Secundario</a>
+                                    <a href="#" class="dropdown-item">Pre-Universitario</a>
+                                    <a href="#" class="dropdown-item">Universitario</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" id="cursosDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Cursos</a>
+                                <div class="dropdown-menu" aria-labelledby="cursosDropdown">
+                                    <a href="cursos_secundario_ad.html" class="dropdown-item">Secundario</a>
+                                    <a href="cursos_preuniversitarios_ad.html" class="dropdown-item">Pre-Universitario</a>
+                                    <a href="cursos_universitarios_ad.html" class="dropdown-item">Universitario</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">Pagos</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" id="cursosDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Fermin</a>
+                                <div class="dropdown-menu" aria-labelledby="cursosDropdown">
+                                    <a href="" class="dropdown-item">Configuracion</a>
+                                    <a href="" class="dropdown-item">Mis datos</a>
+                                    <a href="" class="dropdown-item">Salir</a>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--CAROUSEL ANUNCIOS-->
+        <div class="carousel slide" id="slider" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/nosotros/nosotros1.jpg" class="d-block w-100" alt="anuncio 1">
+                    <div class="carousel-caption">
+                        <h3 class="text-uppercase">Conoce nuestros servicios</h3>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/nosotros/nosotros2.jpg" class="d-block w-100" alt="anuncio 1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2 class="display-4">Encuentra propiedades de lujo</h2>
+                    </div>
+                </div>
+            </div>
+            <a href="#slider" class="carousel-control-prev" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a href="#slider" class="carousel-control-next" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Siguiente</span>
+            </a>
+        </div>
+        <!--CAROUSEL ANUNCIOS-->
+    </header>
+    <!--FIN HEADER-->
+
+    <!-- BIENVENIDO NUEVO SITIO -->
+    <section class="nuevo-sitio py-5">
+        <h2 class="text-center text-uppercase mt-4 encabezado">
+            <span class="text-capitalize d-block">Nuestros cursos y/o talleres</span>de todos los niveles
+        </h2>
+        <p class="text-center mt-4"> Nuestro sistema de enseñanza asegura <br>
+            comprension y dominio de las asignaturas</p>
+    </section>
+    <!-- FIN BIENVENIDO NUEVO SITIO -->
+
+    
+
+    <!-- CONTAINER CURSOS -->
+    <div class="container pt-4 cursos">
+        <div class="row">
+            <main class="col-lg-12 contenido-principal">
+                <h2 class="d-block d-md-none text-uppercase text-center">
+                    Cursos
+                </h2>
+
+                <div class="row">
+                    <div class="card-columns">
+                        <div class="card">
+                            <a href="curso.html">
+                                <img src="img/producto_mini_01.jpg" class="card-img-top img-fluid">
+                                <div class="card-body">
+                                    <h3 class="card-title text-center text-uppercase">
+                                        Curso  1
+                                    </h3>
+                                    <p class="card-text text-uppercase">Curabitur egestas sit amet urna nec blandit. Curabitur egesta.</p>
+                                    <p class="precio lead text-center mb-0">$ 25</p>
+                                </div>
+                            </a>
+                        </div><!--.card-->
+
+                        <div class="card">
+                            <a href="#">
+                                <img src="img/producto_mini_02.jpg" class="card-img-top img-fluid">
+                                <div class="card-body">
+                                    <h3 class="card-title text-center text-uppercase">
+                                        Curso  2
+                                    </h3>
+                                    <p class="card-text text-uppercase">Curabitur egestas sit amet urna nec blandit. Curabitur egesta.</p>
+                                    <p class="precio lead text-center mb-0">$ 25</p>
+                                </div>
+                            </a>
+                        </div><!--.card-->
+                        
+                        <div class="card">
+                            <a href="#">
+                                <img src="img/producto_mini_03.jpg" class="card-img-top img-fluid">
+                                <div class="card-body">
+                                    <h3 class="card-title text-center text-uppercase">
+                                        Curso  3
+                                    </h3>
+                                    <p class="card-text text-uppercase">Curabitur egestas sit amet urna nec blandit. Curabitur egesta.</p>
+                                    <p class="precio lead text-center mb-0">$ 25</p>
+                                </div>
+                            </a>
+                        </div><!--.card-->
+
+                        <div class="card">
+                            <a href="#">
+                                <img src="img/producto_mini_04.jpg" class="card-img-top img-fluid">
+                                <div class="card-body">
+                                    <h3 class="card-title text-center text-uppercase">
+                                        Curso  4
+                                    </h3>
+                                    <p class="card-text text-uppercase">Curabitur egestas sit amet urna nec blandit. Curabitur egesta.Curabitur egestas sit amet urna nec blandit. Curabitur egesta.Curabitur egestas sit amet urna nec blandit. Curabitur egesta.</p>
+                                    <p class="precio lead text-center mb-0">$ 25</p>
+                                </div>
+                            </a>
+                        </div><!--.card-->
+
+                        <div class="card">
+                            <a href="#">
+                                <img src="img/producto_mini_05.jpg" class="card-img-top img-fluid">
+                                <div class="card-body">
+                                    <h3 class="card-title text-center text-uppercase">
+                                        Curso  5
+                                    </h3>
+                                    <p class="card-text text-uppercase">Curabitur egestas sit amet urna nec blandit. Curabitur egesta.</p>
+                                    <p class="precio lead text-center mb-0">$ 25</p>
+                                </div>
+                            </a>
+                        </div><!--.card-->
+
+                        <div class="card">
+                            <a href="#">
+                                <img src="img/producto_mini_06.jpg" class="card-img-top img-fluid">
+                                <div class="card-body">
+                                    <h3 class="card-title text-center text-uppercase">
+                                        Curso  6
+                                    </h3>
+                                    <p class="card-text text-uppercase">Curabitur egestas sit amet urna nec blandit. Curabitur egesta.Curabitur egestas sit amet urna nec blandit. Curabitur egesta.Curabitur egestas sit amet urna nec blandit. Curabitur egesta.Curabitur egestas sit amet urna nec blandit. Curabitur egesta.</p>
+                                    <p class="precio lead text-center mb-0">$ 25</p>
+                                </div>
+                            </a>
+                        </div><!--.card-->
+
+                        <div class="card">
+                            <a href="#">
+                                <img src="img/producto_mini_07.jpg" class="card-img-top img-fluid">
+                                <div class="card-body">
+                                    <h3 class="card-title text-center text-uppercase">
+                                        Curso  7
+                                    </h3>
+                                    <p class="card-text text-uppercase">Curabitur egestas sit amet urna nec blandit. Curabitur egesta.</p>
+                                    <p class="precio lead text-center mb-0">$ 25</p>
+                                </div>
+                            </a>
+                        </div><!--.card-->
+
+
+                        <div class="card">
+                            <a href="#">
+                                <img src="img/producto_mini_08.jpg" class="card-img-top img-fluid">
+                                <div class="card-body">
+                                    <h3 class="card-title text-center text-uppercase">
+                                        Curso  8
+                                    </h3>
+                                    <p class="card-text text-uppercase">Curabitur egestas sit amet urna nec blandit. Curabitur egesta.Curabitur egestas sit amet urna nec blandit. Curabitur egesta.Curabitur egestas sit amet urna nec blandit. Curabitur egesta.</p>
+                                    <p class="precio lead text-center mb-0">$ 25</p>
+                                </div>
+                            </a>
+                        </div><!--.card-->
+                    </div><!--.card-columns-->
+                </div>
+            </main>
+        </div>
+    </div>
+    <!-- FIN CONTAINER CURSOS -->
+
+    <!-- INSCRIPCION AL CURSO -->
+    <div class="inscripcion container-fluid py-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6 text-center">
+                <h3 class="text-uppercase">inscribete ya!!</h3>
+                <p class="mt-5">
+                    Maecenas rhoncus, augue sed volutpat suscipit, augue felis laoreet lectus, vel convallis diam est eu lectus. Mauris metus orci, tempus nec bibendum eget, pulvinar at metus. Etiam egestas sodales auctor.
+                </p>
+                <a href="#" class="btn btn-primary mt-3 text-uppercase">Leer más</a>
+            </div>
+        </div>
+    </div>
+    <!-- FIN INSCRIPCION AL CURSO -->
+
+    <!-- BIENVENIDO NUEVO SITIO -->
+    <a name="servicios" id="servicios"></a> 
+    <section class="nuevo-sitio py-5">
+        <h2 class="text-center text-uppercase mt-4 encabezado">
+            <span class="text-capitalize d-block">Nuestros servicios</span>cursos y/o talleres
+        </h2>
+        <p class="text-center mt-4"> Nuestro sistema de enseñanza asegura <br>
+            comprension y dominio de las asignaturas</p>
+    </section>
+    <!-- FIN BIENVENIDO NUEVO SITIO -->
+
+    <!-- IMAGEN SERVICIOS CURSOS... -->
+    <a name="servicios" id="servicios"></a> 
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-md-4 text-center mb-4">
+                <div class="imagen-servicio">
+                    <img src="img/cursos/curColegio.jpg" class="img-fluid">
+                    <div class="row no-gutters justify-content-center">
+                        <div class="col-md-10 pt-4 servicio-info">
+                            <h2 class="text-center text-uppercase encabezado">
+                                <span class="text-capitalize d-block">Cursos para</span> colegios
+                            </h2>
+                            <a href="cursos_colegios_ad.html" class="btn btn-primary btn-block text-uppercase mt-4 py-3">Leer más</a>
+                        </div>
+                    </div> <!--.row-->
+                </div> <!--.imagen-destacada-->
+            </div> <!--.col-md-4-->
+            <div class="col-md-4 text-center mb-4">
+                <div class="imagen-servicio">
+                    <img src="img/cursos/curPreuniversitario.jpg" class="img-fluid">
+                    <div class="row no-gutters justify-content-center">
+                        <div class="col-md-10 pt-4 servicio-info">
+                            <h2 class="text-center text-uppercase encabezado">
+                                <span class="text-capitalize d-block">Cursos</span> <p>Pre-Universitarios</p>
+                            </h2>
+                            <a href="cursos_preuniversitarios_ad.html" class="btn btn-primary btn-block text-uppercase mt-4 py-3">Leer más</a>
+                        </div>
+                    </div> <!--.row-->
+                </div> <!--.imagen-destacada-->
+            </div> <!--.col-md-4-->
+            <div class="col-md-4 text-center mb-4">
+                <div class="imagen-servicio">
+                    <img src="img/cursos/curUniversitario.jpg" class="img-fluid">
+                    <div class="row no-gutters justify-content-center">
+                        <div class="col-md-10 pt-4 servicio-info">
+                            <h2 class="text-center text-uppercase encabezado">
+                                <span class="text-capitalize d-block">Cursos</span>Universitarios
+                            </h2>
+                            <a href="cursos_universitarios_ad.html" class="btn btn-primary btn-block text-uppercase mt-4 py-3">Leer más</a>
+                        </div>
+                    </div> <!--.row-->
+                </div> <!--.imagen-destacada-->
+            </div> <!--.col-md-4-->
+        </div>
+    </div>
+    <!-- IMAGEN SERVICIOS CURSOS... -->
+
+    
+
+    <!-- PIE DE PAGINA -->
+    <footer class="footer-sitio pt-3 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3 class="text-uppercase text-center pb-4">Nosotros</h3>
+                    <p class="text-justify">Praesent pulvinar dolor eu metus mollis egestas. Vestibulum efficitur, magna quis laoreet rutrum, eros ipsum rutrum erat, a facilisis neque dui ullamcorper metus.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <h3 class="text-uppercase  pb-4">Horario</h3>
+                    <p>Lun-Vie: 9 AM - 7PM</p>
+                    <p>Sábado: 10 AM - 2PM</p>
+                    <p>Domingo: Cerrado</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <h3 class="text-uppercase pb-4">Contacto</h3>
+                    <p>66 East Sunnyslope Avenue </p>
+                    <p>Lansdowne, PA 19050</p>
+                    <nav class="sociales-footer text-center">
+                        <ul>
+                            <li>
+                                <a href="http://facebook.com"> 
+                                    <span class="sr-only"> Facebook</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://twitter.com"> 
+                                    <span class="sr-only"> Twitter</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://instagram.com">
+                                <span class="sr-only"> Instagram</span>
+                            </a>
+                            </li>
+                            <li>
+                                <a href="http://pinterest.com"> 
+                                    <span class="sr-only"> Pinterest</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://youtube.com"> 
+                                    <span class="sr-only"> YouTube</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div> <!--col-md-4-->
+                <hr class="w-100">
+                <p class="text-center copyright w-100">SUMO CONSULTORA & EDUCACION 2021. Todos los derechos reservados</p>
+            </div><!--.row-->
+        </div> <!--.container-->
+
+    </footer>
+    <!-- FIN DE PIE DE PAGINA -->
+
+
+    <script src="js/jquery.slim.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+
+   
+</body>
+</html>

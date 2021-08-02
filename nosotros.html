@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Italianno|Lato:400,700,900|Raleway:400,700,900" rel="stylesheet">
+        
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+    <!-- LOGO DE LA EMPRESA -->
+    <header class="encabezado-sitio container"> <!--sticky-top para que sea fijo-->
+        <div class="row justify-content-md-between align-items-center">
+            <div class="col-lg-4">
+                <a href="index.html"></a>
+                <!-- <img src="img/logo.svg" class="img-fluid mx-auto d-block pt-4 pb-4"> -->
+                <img src="img/icoLogo/iconoEmpresaSL.png" class="img-fluid mx-auto d-block pt-4 pb-4">
+            </div>
+            <div class="col-lg-4 ">
+                <nav class="sociales text-center text-lg-right">
+                    <ul>
+                        <li>
+                            <a href="http://facebook.com"> 
+                                <span class="sr-only">Facebook </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://twitter.com"> 
+                            <span class="sr-only">Twitter </span>
+                        </a>
+                        </li>
+                        <li>
+                            <a href="http://instagram.com"> 
+                                <span class="sr-only">Instagram </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://pinterest.com"> 
+                                <span class="sr-only">Pinterest </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://youtube.com"> 
+                                <span class="sr-only">YouTube </span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!--  FIN LOGO DE LA EMPRESA -->
+
+    <!--COLLAPSE MENU  sticky-top para que se pegue-->
+    <div class="navegacion mt-3 py-1 sticky-top">
+        <nav class="nav-principal navbar navbar-expand-md navbar-light bg-faded">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav_principal" aria-label="Mostrar Navegación">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- MENU RESPONSIVE -->
+            <a href="" class="navbar-brand d-lg-none">Consultora  SUMO</a>
+            <div class="container">
+                <div class="collapse navbar-collapse w-100" id="nav_principal">
+                    <ul class="nav nav-justified  w-100 flex-column flex-sm-row">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="nosotros.html" class="nav-link">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#servicios" class="nav-link">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="cursos.html" class="nav-link">Cursos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="btn btn-outline-light btn-rounded nav-link" role="button" data-toggle="modal" data-target="#registrarModal">Regístrate</a>
+                            </li>&nbsp; &nbsp; &nbsp;
+                        <li>
+                        <li class="nav-item">
+                            <a href="" class="btn btn-outline-light btn-rounded nav-link" role="button" data-toggle="modal" data-target="#iniciarSesionModal">Iniciar Sesión</a>
+                        </li>
+                    </ul>
+                </div> <!-- collapse -->
+            </div>
+        </nav>
+    </div>
+    <!-- FIN COLLAPSE MENU -->
+
+     <!-- MODAL REGISTRARSE -->
+     <div class="modal fade show" id="registrarModal"  tabindex="-1" aria-labelledby="registrarModalTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="main">
+                        <h3>Registrar su cuenta</h3>
+                        <div class="login-or">
+                            <hr class="hr-or">
+                            <span class="span-or">o</span>
+                            <small class="form-text text-muted" style="padding-top:7px; text-align: center;">Ingresa tus datos para Registrarse</small>
+                        </div>
+                        <form class="form needs-validation" name="form_log" id="form_log" method="post" action="#" novalidate>
+                            <div class="form-row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="nombre_reg">Nombres</label>
+                                        <input type="text" class="form-control" id="nombre_reg" name="nombre_reg" placeholder="Introduzca nombre" required>
+                                        <div class="invalid-feedback">
+                                            El nombre es obligatorio
+                                        </div>
+                                        <div class="valid-feedback">
+                                            El nombre es correcto
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="form-row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="paterno_reg">Apellido Paterno</label>
+                                        <input type="text" class="form-control" id="paterno_reg" name="paterno_reg" placeholder="Apellido Paterno"required>
+                                        <div class="invalid-feedback">
+                                            El apellido paterno es obligatorio
+                                        </div>
+                                        <div class="valid-feedback">
+                                            El apellido paterno es correcto
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="materno_reg">Apellido Mateno</label>
+                                        <input type="text" class="form-control" id="materno_reg" name="materno_reg" placeholder="Apellido Materno" required>
+                                        <div class="invalid-feedback">
+                                            El apellido materno es obligatorio
+                                        </div>
+                                        <div class="valid-feedback">
+                                            El apellido materno es correcto
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="form-row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="cedula_reg">Cedula de Identidad</label>
+                                        <input type="number" class="form-control" id="cedula_reg" name="cedula_reg" placeholder="Cedula de Identidad" required>
+                                        <div class="invalid-feedback">
+                                            La cedula de identidad es incorrecto
+                                        </div>
+                                        <div class="valid-feedback">
+                                            La cedula de identidad es correcto
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="celular_reg">Nro. Celular</label>
+                                        <input type="number" class="form-control" id="celular_reg" name="celular_reg" placeholder="Numero Celular" required>
+                                        <div class="invalid-feedback">
+                                            El nro. celular es obligatorio
+                                        </div>
+                                        <div class="valid-feedback">
+                                            El nro. celular es correcto
+                                        </div>
+                                    </div>
+                                </div>
+                                    
+                            </div>
+            
+                            <div class="form-row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="direccion_reg">Dirección</label>
+                                        <input type="text" class="form-control" id="direccion_reg" name="direccion_reg" placeholder="Dirección" required>
+                                        <div class="invalid-feedback">
+                                            La dirección es obligatorio
+                                        </div>
+                                        <div class="valid-feedback">
+                                            La dirección es correcto
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                
+                            <div class="form-row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="email_reg">E-mail</label>
+                                        <input type="email" class="form-control" id="email_reg" name="email_reg" placeholder="ejemplo@gmail.com" required>
+                                        <div class="invalid-feedback">
+                                            El correo es obligatorio
+                                        </div>
+                                        <div class="valid-feedback">
+                                            El correo es correcto
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <input type="submit" class="btn btn btn-primary btn-block" name="btn_registrar" id="btn_registrar"value="Registrarse">
+                        </form>
+                    </div>
+                </div>
+    
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+    <!-- FIN MODAL REGISTRARSE-->
+
+    <!-- MODAL INICIAR SESION -->
+    <div class="modal" id="iniciarSesionModal" tabindex="-1" aria-labelledby="iniciarSesionModalTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="main">
+                        <h3>Continuar con</h3>
+
+                        <div class="row">
+                            <div class="col-lg-12 d-flex justify-content-center">
+                                <div class="col-md-8">
+                                    <a href="https://www.facebook.com/v3.2/dialog/oauth?client_id=4702151946469036&state=1cc43721da0d5ce123c743a4713b9934&response_type=code&sdk=php-sdk-5.7.0&redirect_uri=https%3A%2F%2Fsumoconsultora.com%2Fwebsite%2Fautentificacion%2FC_login%2Flog_facebook%2F&scope=email"class="btn btn-lg btn-primary btn-block">
+                                        <i class="icofont-facebook"> </i> &nbsp; Facebook
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="login-or">
+                            <hr class="hr-or">
+                            <span class="span-or">o</span>
+                            <small class="form-text text-muted" style="padding-top:7px; text-align: center;">Ingresa tus datos para Iniciar Sesión</small>
+                        </div>
+                        <form  name="form_log" id="form_log" method="" action="inicio_administrador.html">
+                            <div class="form-row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="usuario_log">Usuario</label>
+                                        <input type="text" class="form-control" id="usuario_log" name="usuario_log" placeholder="admin">
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="form-row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        
+                                        <label for="password_log" >Contraseña</label>
+                                        <a class="pull-right" href="#">¿Olvidó su contraseña?</a>
+                                        <input type="password" class="form-control" id="password_log" name="password_log"  placeholder="admin">
+                                    </div>
+                                    <div class="text-center mt-1 font-weight-light text-login">
+                                        ¿No tienes una cuenta? <a href="#" class="irModalRegistrar">Registrarse</a>
+                                    </div>
+                                    <br><br><br>
+                                </div>
+                            </div>
+
+                            <input type="submit" class="btn btn btn-primary btn-block" name="btn_login" id="btn_login" value="Iniciar Sesión">
+                        </form>
+                    </div>
+                </div>
+    
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+    <!-- FIN MODAL INICIAR SESION -->
+
+    
+    <!-- CONTENIDO NOSOTROS -->
+    <div class="container pt-4">
+        <div class="row no-gutters">
+            <div class="col-12 hero">
+                <img src="img/nosotros.jpg" class="img-fluid">
+                <h2 class="text-uppercase d-none d-md-block py-3 px-5">Nosotros</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="container pt-4">
+        <div class="row">
+                <main class="col-lg-8 contenido-principal">
+                    <h2 class="d-block d-md-none text-uppercase text-center">
+                        Nosotros
+                    </h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed convallis ac risus sit amet condimentum. Duis pellentesque vitae erat a varius. Donec tincidunt, risus sit amet varius tincidunt, turpis arcu ullamcorper ligula, at feugiat turpis massa vitae erat. Nam sit amet posuere urna. Mauris consequat elit in tellus fringilla, in mollis dolor feugiat. Vivamus fringilla eros sed leo maximus rhoncus. Phasellus sit amet vehicula diam. Pellentesque ut lorem ex.</p>
+                      
+                    <p>Donec sed accumsan velit. Vestibulum egestas neque eget est pharetra gravida. Vestibulum aliquet, mauris nec blandit pharetra, tellus lorem feugiat dui, non sollicitudin quam neque et lorem. Fusce quis magna sollicitudin, consectetur ante ut, imperdiet turpis. Fusce hendrerit justo ut bibendum semper. Quisque fringilla posuere neque a vulputate.</p>
+                      
+
+                    <h1 class="text-center text-uppercase mt-5 encabezado">
+                        <span class="text-lowercase d-block">conoce nuestras </span> instalaciones
+                    </h1>
+                    <div class="imagenes pt-4">
+                        <a href="#" data-target="#imagen_1" data-toggle="modal">
+                            <img src="img/galeria_mini_01.jpg" class="img-fluid">
+                        </a>
+                        <a href="#" data-target="#imagen_2" data-toggle="modal">
+                            <img src="img/galeria_mini_02.jpg" class="img-fluid">
+                        </a>
+                        <a href="#" data-target="#imagen_3" data-toggle="modal">
+                            <img src="img/galeria_mini_03.jpg" class="img-fluid">
+                        </a>
+
+                        <div class="modal fade" id="imagen_1" tabindex="-1" role="dialog" aria-labelledby="Imagen 1" aria-hidden="true">
+                            <div class="modal-dialog modal-lg" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <img src="img/galeria_grande_01.jpg" class="img-fluid">
+                                    </div><!--modal-body-->
+                                </div><!--modal-content-->
+                            </div><!--modal-dialog-->
+                        </div> <!--modal-->
+                        <div class="modal fade" id="imagen_2" tabindex="-1" role="dialog" aria-labelledby="Imagen 2" aria-hidden="true">
+                            <div class="modal-dialog modal-lg" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <img src="img/galeria_grande_02.jpg" class="img-fluid">
+                                    </div><!--modal-body-->
+                                </div><!--modal-content-->
+                            </div><!--modal-dialog-->
+                        </div> <!--modal-->
+                        <div class="modal fade" id="imagen_3" tabindex="-1" role="dialog" aria-labelledby="Imagen 3" aria-hidden="true">
+                            <div class="modal-dialog modal-lg" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <img src="img/galeria_grande_03.jpg" class="img-fluid">
+                                    </div><!--modal-body-->
+                                </div><!--modal-content-->
+                            </div><!--modal-dialog-->
+                        </div> <!--modal-->
+                    </div>
+                </main>
+
+                <aside class="col-lg-4 pt-4 pt-lg-0 align-self-start">
+                    <div class="sidebar horario">
+                            <h2 class="text-center text-uppercase mt-5">Horarios</h2>
+                            <p class="text-center mt-3 lead">
+                                Morbi risus mi, feugiat non nulla eu, dapibus sagittis turpis. Praesent vel dignissim libero. Morbi vel porttitor orci. Integer non elit eu odio vulputate aliquet at sed odio.
+                            </p>
+                            <table class="table table-hover text-center mt-3">
+                                <thead>
+                                    <tr>
+                                        <th class="text-center">Día</th>
+                                        <th class="text-center">De</th>
+                                        <th class="text-center">Hasta</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                       <td>Lunes</td>
+                                        <td>09:00</td>
+                                        <td>19:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Martes</td>
+                                        <td>09:00</td>
+                                        <td>19:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Miércoles</td>
+                                        <td>09:00</td>
+                                        <td>19:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Jueves</td>
+                                        <td>09:00</td>
+                                        <td>19:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Viernes</td>
+                                        <td>09:00</td>
+                                        <td>19:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sábado</td>
+                                        <td>10:00</td>
+                                        <td>14:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Domingo</td>
+                                        <td>Cerrado</td>
+                                        <td>Cerrado</td>
+                                    </tr>
+                                </tbody>
+                           </table>
+                    </div>
+                </aside>
+        </div>
+    </div>
+    <!-- FIN CONTENIDO NOSOTROS -->
+
+    <!-- BIENVENIDO NUEVO SITIO -->
+    <a name="servicios" id="servicios"></a> 
+    <section class="nuevo-sitio py-5">
+        <h2 class="text-center text-uppercase mt-4 encabezado">
+            <span class="text-capitalize d-block">Nuestros servicios</span>cursos y/o talleres
+        </h2>
+        <p class="text-center mt-4"> Nuestro sistema de enseñanza asegura <br>
+            comprension y dominio de las asignaturas</p>
+    </section>
+    <!-- FIN BIENVENIDO NUEVO SITIO -->
+
+    <!-- IMAGEN SERVICIOS CURSOS... -->
+    <a name="servicios" id="servicios"></a> 
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-md-4 text-center mb-4">
+                <div class="imagen-servicio">
+                    <img src="img/cursos/curColegio.jpg" class="img-fluid">
+                    <div class="row no-gutters justify-content-center">
+                        <div class="col-md-10 pt-4 servicio-info">
+                            <h2 class="text-center text-uppercase encabezado">
+                                <span class="text-capitalize d-block">Cursos para</span> colegios
+                            </h2>
+                            <a href="cursos_colegios.html" class="btn btn-primary btn-block text-uppercase mt-4 py-3">Leer más</a>
+                        </div>
+                    </div> <!--.row-->
+                </div> <!--.imagen-destacada-->
+            </div> <!--.col-md-4-->
+            <div class="col-md-4 text-center mb-4">
+                <div class="imagen-servicio">
+                    <img src="img/cursos/curPreuniversitario.jpg" class="img-fluid">
+                    <div class="row no-gutters justify-content-center">
+                        <div class="col-md-10 pt-4 servicio-info">
+                            <h2 class="text-center text-uppercase encabezado">
+                                <span class="text-capitalize d-block">Cursos</span> <p>Pre-Universitarios</p>
+                            </h2>
+                            <a href="cursos_preuniversitarios.html" class="btn btn-primary btn-block text-uppercase mt-4 py-3">Leer más</a>
+                        </div>
+                    </div> <!--.row-->
+                </div> <!--.imagen-destacada-->
+            </div> <!--.col-md-4-->
+            <div class="col-md-4 text-center mb-4">
+                <div class="imagen-servicio">
+                    <img src="img/cursos/curUniversitario.jpg" class="img-fluid">
+                    <div class="row no-gutters justify-content-center">
+                        <div class="col-md-10 pt-4 servicio-info">
+                            <h2 class="text-center text-uppercase encabezado">
+                                <span class="text-capitalize d-block">Cursos</span>Universitarios
+                            </h2>
+                            <a href="cursos_universitarios.html" class="btn btn-primary btn-block text-uppercase mt-4 py-3">Leer más</a>
+                        </div>
+                    </div> <!--.row-->
+                </div> <!--.imagen-destacada-->
+            </div> <!--.col-md-4-->
+        </div>
+    </div>
+    <!-- IMAGEN SERVICIOS CURSOS... -->
+
+    
+
+    
+
+    <!-- PIE DE PAGINA -->
+    <footer class="footer-sitio pt-3 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3 class="text-uppercase text-center pb-4">Nosotros</h3>
+                    <p class="text-justify">Praesent pulvinar dolor eu metus mollis egestas. Vestibulum efficitur, magna quis laoreet rutrum, eros ipsum rutrum erat, a facilisis neque dui ullamcorper metus.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <h3 class="text-uppercase  pb-4">Horario</h3>
+                    <p>Lun-Vie: 9 AM - 7PM</p>
+                    <p>Sábado: 10 AM - 2PM</p>
+                    <p>Domingo: Cerrado</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <h3 class="text-uppercase pb-4">Contacto</h3>
+                    <p>66 East Sunnyslope Avenue </p>
+                    <p>Lansdowne, PA 19050</p>
+                    <nav class="sociales-footer text-center">
+                        <ul>
+                            <li>
+                                <a href="http://facebook.com"> 
+                                    <span class="sr-only"> Facebook</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://twitter.com"> 
+                                    <span class="sr-only"> Twitter</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://instagram.com">
+                                <span class="sr-only"> Instagram</span>
+                            </a>
+                            </li>
+                            <li>
+                                <a href="http://pinterest.com"> 
+                                    <span class="sr-only"> Pinterest</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://youtube.com"> 
+                                    <span class="sr-only"> YouTube</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div> <!--col-md-4-->
+                <hr class="w-100">
+                <p class="text-center copyright w-100">SUMO CONSULTORA & EDUCACION 2021. Todos los derechos reservados</p>
+            </div><!--.row-->
+        </div> <!--.container-->
+
+    </footer>
+    <!-- FIN DE PIE DE PAGINA -->
+
+    <script src="js/jquery.slim.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    
+</body>
+</html>
+
+
